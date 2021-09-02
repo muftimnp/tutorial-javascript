@@ -26,3 +26,9 @@ git push -u origin namaBranch
 ```
 git checkout -b branchBaru branchAsal
 ```
+
+### git merge
+```
+git checkout branchYangNgeMerge
+git merge branchManaYangDimerge
+```
