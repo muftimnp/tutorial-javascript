@@ -21,6 +21,8 @@ git add .
 git commit -m "pesan nya apa"
 git push -u origin namaBranch
 ```
+
+### Bikin branch baru di git
 ```
 git checkout -b branchBaru branchAsal
 ```
