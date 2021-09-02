@@ -21,3 +21,6 @@ git add .
 git commit -m "pesan nya apa"
 git push -u origin namaBranch
 ```
+```
+git checkout -b branchBaru branchAsal
+```
