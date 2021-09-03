@@ -11,14 +11,18 @@
 <body>
     <li><a href="operator-unary.html">operator-unary</a></li>
     <li><a href="operator-perbandingan.html">operator-perbandingan</a></li>
+    <li><a href="operator-logika.html">operator-logika</a></li>
+    <li><a href="konversi-string-dan-number.html">konversi-string-dan-number</a></li>
     <script src="home.js"></script>
 
     <script>
+        // Escape Sequences
         document.writeln(`</br>Hello \\ World</br>`);
-        document.writeln("Hello \ World");
+        document.writeln("Hello \n World"); //harus syntax string html makanya ga newline
         try {
             persisFinal = 2000;
         } catch (error) {
+            //console method
             console.log(`ini error nya ${error}`);
             console.warn(error);
             console.info(error);
