@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {};
+
+        //ubah property / attribute
+        person["nama"] = "Mufti Muhammad";
+        person["alamat"] = "Indonesia";
+        person["umur"] = "23";
+        console.table(person);
+
+        //cara delete object
+        delete person["umur"]; 
+        console.table(person);
+        
+        let namaKu = "Mufti Muhammad";
+        const player = {
+            namaPemain: `${namaKu}`,
+            "alamat pemain": "Indonesia", //ini contoh yg tidak baik
+            umurPemain: 23
+        };
+        console.table(player);
+
+        console.info(`Nama : ${player.namaPemain}`);
+        console.info(`Alamat : ${player["alamat pemain"]}`);
+        console.info(`Umur : ${player.umurPemain}`);
+    </script>
+    <li><a href="index.html">home</a></li>
+</body>
+</html>

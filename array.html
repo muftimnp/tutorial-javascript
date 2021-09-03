@@ -16,12 +16,13 @@
         names.push("Mufti");
         names.push("Muhammad", "Nur");
         names.push("Prabowo");
+        names.push(["test", "nama", "orang"]);
         console.log(names);
         console.log("array length = "+names.length);
         console.log(names.slice(1,3));
         
         //motong data tanpa menghilangkan indeks (awalIndeks, jumlahYangAkanDihapus)    
-        names.splice(1,3);
+        names.splice(1,2);
         console.table(names);
         console.log("array length = "+names.length);
         
@@ -31,17 +32,8 @@
         console.log("array length = "+names.length);
 
         //delete data dan indeks pada array
-        // delete names[1];
-        // console.table(names);
-        names.slice(0,2);
+        delete names[1];
         console.table(names);
-        //array length
-        console.log("array length = "+names.length);
-
-        // //delete data dan indeks pada array
-        // delete names[0];
-        // console.table(names);
-        // console.log("array length = "+names.length);
     </script>
     <li><a href="index.html">home</a></li>
 </body>
