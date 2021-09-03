@@ -8,18 +8,24 @@
 </head>
 <body>
     <script>
-        const value1 = "1.1";
-        const value2 = 1.1;
-        const value3 = parseInt("1.1");
-        const value4 = parseFloat("1.1");
-        const value5 = Number("1.1");
+        const value1 = "1.8";
+        const value2 = 1.8;
+        const value3 = parseInt("1.8");
+        const value4 = parseFloat("1.8");
+        const value5 = Number("1.8");
+        const notAnumber = "A";
         const sum = value1 + value2;
 
-        document.writeln(`<p> value1 + value2 = ${sum}</p>`);
-        document.writeln(`<p>value3(konversi ke int) = ${value3}</p>`);
-        document.writeln(`<p>value4(konversi ke float) = ${value4}</p>`);
-        document.writeln(`<p>value5(konversi ke number) = ${value5}</p>`);
-        document.writeln(`<p>value3 + value4 = </p>`);
+        //Jika konversi string huruf dengan parse int atau float mampu menolerir jika string ada dibelakang
+        //Tapi jika konversi string huruf dengan number akan selalu menjadi NaN
+        console.log(`<p> value1 + value2 = ${sum}</p>`);
+        console.log(`<p>value3(stringAngka ke int) = ${value3}</p>`);
+        console.log(`<p>value4(stringAngka ke float) = ${value4}</p>`);
+        console.log(`<p>value5(stringAngka ke number) = ${value5}</p>`);
+        console.log(`<p>notAnumber(stringHuruf ke number) = ${Number(notAnumber)}</p>`);
+        console.log(`<p>value3 + value4 = ${value3 + value4}</p>`);
+        console.log(`<p>value5 + notAnumber = ${value5 + Number(notAnumber)}</p>`);    
+        console.log(`<p>cek apakah NaN = ${isNaN(Number(notAnumber))}</p>`);    
     </script>
     <li><a href="index.html">home</a></li>
 </body>
