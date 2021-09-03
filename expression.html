@@ -21,17 +21,21 @@
         //pop up --- alert, prompt, confirm
         const nilaiMu = prompt("Berapa nilai mu = ");
         if (nilaiMu>70) {
-            console.log("Selamat anda lulus");
+            const nameLulus = prompt("Nama anda = ");
+            alert(`${nameLulus} Selamat anda lulus dengan nilai memuaskan`);
+            console.log(`${nameLulus} Selamat anda lulus dengan nilai memuaskan`);
         } else if (nilaiMu>50) {
             const belajar = confirm("Apakah anda mau remedial ? ");
             if(belajar){
                 const nameRemedial = prompt("Nama anda = ");
                 alert(`${nameRemedial} terdaftar untuk remedial`);
+                console.log(`${nameRemedial} terdaftar untuk remedial`);
             }else{
                 alert(`Jangan pasrah woiii`);
             }
         } else {
-            console.log("Anda tidak lulus");
+            alert(`Maaf anda tidak lulus`);
+            console.log("Maaf anda tidak lulus");
         };
     </script>
     <li><a href="index.html">home</a></li>
