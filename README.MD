@@ -32,3 +32,9 @@ git checkout -b branchBaru branchAsal
 git checkout branchYangNgeMerge
 git merge branchManaYangDimerge
 ```
+
+### git push berdasarkan commit SHA
+```
+git log master
+git push <remotename> <commit SHA>:<remotebranchname>
+```
