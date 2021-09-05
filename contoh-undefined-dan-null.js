@@ -31,7 +31,7 @@ if (person.name === undefined) {
     console.info(person);
 }
 
-//null
+//contoh null
 let firstName = null;
 if (firstName  === undefined) {
     alert("UNDEFINED");
